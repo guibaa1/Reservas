@@ -1,0 +1,160 @@
+/* ===== ESTILOS GERAIS ===== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #ebebeb;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+/* ===== ABAS ===== */
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #3498db;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #7f8c8d;
+  transition: all 0.3s;
+}
+
+.tab-btn.active {
+  color: #2c3e50;
+  background-color: #e1f0fa;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ===== FORMULÁRIOS ===== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+/* ===== MENSAGENS ===== */
+.message {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+  display: none;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d5f5e3;
+  color: #27ae60;
+  display: block;
+}
+
+.message.error {
+  background-color: #fadbd8;
+  color: #e74c3c;
+  display: block;
+}
+
+/* ===== RELATÓRIOS (Gerente) ===== */
+pre {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  border: 1px solid #ddd;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .tab-buttons {
+    flex-wrap: wrap;
+  }
+}
