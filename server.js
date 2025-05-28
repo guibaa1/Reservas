@@ -9,11 +9,9 @@ const server = http.createServer(app);
 const io = socketIo(server);
 const db = new sqlite3.Database('./reservas.db');
 
-// Configurações
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/favicon.ico', (req, res) => res.status(204).end());
 
-// Rotas
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
