@@ -150,7 +150,7 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Conexão com o servidor Socket.IO
+
             const socket = io();
             
             // Controle das abas
@@ -169,14 +169,12 @@
                 });
             });
 
-            // Configuração inicial da data
             const hoje = new Date();
             document.getElementById('data').min = hoje.toISOString().split('T')[0];
             document.getElementById('data-garcom').min = hoje.toISOString().split('T')[0];
             document.getElementById('inicio').min = hoje.toISOString().split('T')[0];
             document.getElementById('fim').min = hoje.toISOString().split('T')[0];
-
-            // Elementos de mensagem
+            
             const msgAtendente = document.getElementById('msg-atendente');
             const msgGarcom = document.getElementById('msg-garcom');
             
@@ -185,7 +183,7 @@
                 return;
             }
 
-            // ========== ATENDENTE ==========
+            // ATENDENTE 
             document.getElementById('form-reserva').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
@@ -228,7 +226,7 @@
                 }
             });
 
-            // ========== GARÇOM ==========
+            //  GARÇOM 
             document.getElementById('form-confirmar').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
