@@ -83,7 +83,8 @@ http://localhost:3000
 - Atualizações em tempo real com Socket.IO
 - Gere relatórios na aba do gerente
 
-  Componentes
+--COMPONENTES--
+
 - Alisson gabriel 12724127191  
 - Guilherme Silva 12724135253
 - Lucas Wu 12724130877
