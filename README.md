@@ -83,10 +83,10 @@ http://localhost:3000
 - Atualizações em tempo real com Socket.IO
 - Gere relatórios na aba do gerente
 
-  Componentes
+--COMPONENTES--
 - Alisson gabriel
 - Guilherme Silva
 - Lucas Wu
 - João Marcos
 - Caue Silva
-- Ednaldo rodrigues 
+- Ednaldo Andrade 
